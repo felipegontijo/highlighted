@@ -10,3 +10,6 @@ const bodyParser = require('body-parser');
 // use body-parser as middleware
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
+
+// Cors for cross origin allowance
+app.use(cors());

@@ -16,3 +16,12 @@ app.use(cors());
 
 // Initialize main project folder
 app.use(express.static('website'));
+
+// determine our port
+const port = 8000;
+// start the server
+const server = app.listen(port, listening);
+// callback funcion that logs the port number when server runs
+function listening() {
+    console.log(`server running on localhost: ${port}`);
+}

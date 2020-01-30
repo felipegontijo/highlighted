@@ -1,7 +1,6 @@
 # HighlightED - Your Knowledge Bank
 
-Web App that allows users to store information they find interesting or useful on the web into their accounts, i.e. **Wallet**.
-It connects to a browser extension which listens for text selection by the user and prompts him options to save into his Wallet.
+Web App and Browser Extension that allows users to store information they find interesting or useful on the web into their accounts. More information to come!
 
 # Tech Stack
 

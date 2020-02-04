@@ -1,6 +1,10 @@
 # HighlightED - Your Knowledge Bank
 
-Web App and Browser Extension that allows users to store information they find interesting or useful on the web into their accounts. More information to come!
+Web App and Browser Extension that allows users to store information they find interesting or useful on the web into their accounts.
+
+**This repo is for the web app!** For the extension, navigate to [the extension's repo](https://github.com/felipegontijo/highlighted-extension)
+
+More information to come!
 
 # Tech Stack
 

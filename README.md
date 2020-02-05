@@ -1,27 +1,15 @@
-# Highlighted
+# HighlightED - Your Knowledge Bank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+Web App and Browser Extension that allows users to store information they find interesting or useful on the web into their accounts.
 
-## Development server
+**This repo is for the web app!** For the extension, navigate to [the extension's repo](https://github.com/felipegontijo/highlighted-extension)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+More information to come!
 
-## Code scaffolding
+# Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project is being built with the MEAN Stack, i.e. MongoDB, Express, Angular, and Node.JS
 
-## Build
+## In Progress
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This is currently a work in progress and has a launch date scheduled for late April. Check back after a while to see if it's already out!

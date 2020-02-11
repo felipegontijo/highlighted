@@ -4,9 +4,9 @@ Web App and Browser Extension that allows users to store information they find i
 
 **This repo is for the web app!** For the extension, navigate to [the extension's repo](https://github.com/felipegontijo/highlighted-extension)
 
-More information to come!
+More information to come. For the design specification of this project, go to this [Wiki](https://github.com/felipegontijo/highlighted/wiki/Software-Design-Specification)
 
-# Tech Stack
+## Tech Stack
 
 This project is being built with the MEAN Stack, i.e. MongoDB, Express, Angular, and Node.JS
 

@@ -16,6 +16,6 @@ function getSelectionText() {
 }
 
 // alerts text selected -- testing purposes
-// document.onmouseup = document.onkeyup = document.onselectionchange = () => {
-//     chrome.tabs.alert(getSelectionText());
-//   };
+document.onmouseup = document.onkeyup = document.onselectionchange = () => {
+    alert(getSelectionText());
+  };

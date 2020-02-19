@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Header } from './header/header.component';
+import { Hero } from './hero/hero.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    Header
+    Header,
+    Hero
   ],
   imports: [
     BrowserModule,

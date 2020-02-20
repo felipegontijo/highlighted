@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Header } from './header/header.component';
-import { Hero } from './hero/hero.component'
-import { Teaser } from './teaser/teaser.component';
+import { HeaderComponent } from './header/header.component';
+import { HeroComponent } from './hero/hero.component'
+import { TeaserComponent } from './teaser/teaser.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Header,
-    Hero,
-    Teaser
+    HeaderComponent,
+    HeroComponent,
+    TeaserComponent
   ],
   imports: [
     BrowserModule,

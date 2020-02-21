@@ -1,9 +1,9 @@
 function getUserSelection() {
-    let thereIsSelection = window.getSelection ? true : false;
-    if (thereIsSelection) {
+    let isSelected = window.getSelection ? true : false;
+    if (isSelected) {
         return window.getSelection();
     }
 }
 
-/* alert user selection -- testing purposes */
+/* testing purposes */
 alert(getUserSelection());

@@ -1,4 +1,10 @@
 body {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#041B15;
+}
+
+.teaser-background {
+    background-color: #00838F;
+    width: 100%;
+    height: 900px;
+    margin-block-start: 0;
 }

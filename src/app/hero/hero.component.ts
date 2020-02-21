@@ -7,5 +7,6 @@ import { Component } from '@angular/core'
 })
 
 export class HeroComponent {
-
+    heroTitle: string = 'The Knowledge Bank';
+    heroDescription: string = 'Find good content on the web. Highlight it. Save it. Keep browsing. Retrieve it anytime.';
 }

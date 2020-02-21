@@ -20,13 +20,13 @@
 
 .header__title {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 27pt;
+    font-size: 22pt;
     color:#041B15;
 }
 
 .header__link {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 22pt;
+    font-size: 18pt;
     text-decoration: none;
     color:#041B15;
     margin-left: 30px;

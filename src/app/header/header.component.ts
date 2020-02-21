@@ -7,5 +7,8 @@ import { Component } from '@angular/core'
 })
 
 export class HeaderComponent {
-
+    headerTitle: string = 'highlightED';
+    firstLink: string = 'About';
+    secondLink: string = 'Download';
+    thirdLink: string = 'Login | Signup';
 }

@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component'
 import { TeaserComponent } from './teaser/teaser.component';
+import { NotesComponent } from './notes/notes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    TeaserComponent
+    TeaserComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

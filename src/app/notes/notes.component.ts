@@ -14,7 +14,9 @@ export class NotesComponent implements OnInit {
   constructor(private noteService: NoteService) { }
 
   getNotes(): void {
-    this.notes = this.noteService.getNotes();
+    // returns an Observable<Notes[]>
+    this.noteService.getNotes()
+    .subscribe(notes => this.notes = notes);
   }
 
   ngOnInit() {

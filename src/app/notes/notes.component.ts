@@ -14,7 +14,7 @@ export class NotesComponent implements OnInit {
   constructor(private noteService: NoteService) { }
 
   getNotes(): void {
-    // returns an Observable<Notes[]>
+    // returns an Observable<Notes[]> on which we call the subscribe method
     this.noteService.getNotes()
     .subscribe(notes => this.notes = notes);
   }

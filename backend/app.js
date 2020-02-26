@@ -9,7 +9,7 @@ const cors = require('cors');
 
 /* Middleware */
 
-//Here we are configuring express to use body-parser as middle-ware.
+// use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -21,13 +21,31 @@ app.use(express.static('../src'));
 
 /* Server Setup  */
 
-// Determine the Port
 const port = 3000;
 
-// Spin up the server
 const server = app.listen(port, listening);
 
-// Callback function listening
 function listening() {
     console.log(`Server running on localhost:${port}`);
+}
+
+/* Routes */
+
+let notes = [];
+
+app.get('/api/notes', sendData);
+
+function sendData(request, response) {
+    response.send(notes);
+}
+
+app.post('api/add', addData);
+
+function addData(request, response) {
+    notes.push({
+        url: request.body.url,
+        title: request.body.title,
+        content: request.body.content
+    });
+    response.status(200);
 }

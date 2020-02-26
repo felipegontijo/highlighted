@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component'
 import { TeaserComponent } from './teaser/teaser.component';
 import { NotesComponent } from './notes/notes.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NotesComponent } from './notes/notes.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

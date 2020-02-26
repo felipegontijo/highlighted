@@ -2,6 +2,9 @@
 <main>
     <div class="teaser-background">
         <app-hero></app-hero>
+        <nav class="wrapper">
+            <a routerLink="/notes">Notes</a>
+        </nav>
     </div>
-    <app-notes></app-notes>
+    <router-outlet></router-outlet>
 </main>

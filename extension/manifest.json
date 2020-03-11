@@ -1,5 +1,4 @@
 {
-    "manifest_version": 2,
     "name": "HighlightED Extension",
     "version": "1.0",
     "description": "Your Knowledge Bank. Save quotes, phrases, or any information you want from the Web!",
@@ -10,6 +9,15 @@
     },
     "permissions": [
         "tabs",
-        "activeTab"
-    ]
+        "activeTab",
+        "http://*/",
+        "https://*/"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "manifest_version": 2
 }

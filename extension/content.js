@@ -7,12 +7,6 @@ document.addEventListener('mouseup', () => {
     if (selection.length) {
         console.log(selection);
         chrome.runtime.sendMessage({content: selection}, (response) => {
-            // if (response != undefined && response != "") {
-            //     console.log(response);
-            // }
-            // else {
-            //     console.log(null);
-            // }
             console.log(response);
         })
     }

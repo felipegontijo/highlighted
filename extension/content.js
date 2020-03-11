@@ -1,30 +1,19 @@
-function getUserSelection() {
-    let isSelected = window.getSelection ? true : false;
-    if (isSelected) {
-        return window.getSelection();
-    }
-}
+let selection = '';
 
-function getTabTitle() {
-    const tabUrl = '';
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-        tabUrl = tabs[0].url;     //url
-    });
-    return tabUrl;
-}
-
-async function postData(url = '', data = {}) {
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data)
-    })
-    try {
-        const newData = await response.json();
-        return newData;
-    } catch (error) {
-        console.log('error', error);
+document.addEventListener('mouseup', () => {
+    console.log('mouse event seen');
+    selection = window.getSelection().toString();
+    console.log(selection.length)
+    if (selection.length) {
+        console.log(selection);
+        chrome.runtime.sendMessage({content: selection}, (response) => {
+            // if (response != undefined && response != "") {
+            //     console.log(response);
+            // }
+            // else {
+            //     console.log(null);
+            // }
+            console.log(response);
+        })
     }
-}
+})

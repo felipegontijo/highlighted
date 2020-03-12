@@ -39,7 +39,7 @@ function sendData(request, response) {
     response.send(notes);
 }
 
-app.post('api/add', addData);
+app.post('/api/add', addData);
 
 function addData(request, response) {
     notes.push({
@@ -47,5 +47,5 @@ function addData(request, response) {
         title: request.body.title,
         content: request.body.content
     });
-    response.status(200);
+    response.status(201);
 }

@@ -10,7 +10,7 @@ chrome.runtime.onMessage.addListener(
                 content: message.content
             }
             alert(data);
-            fetch('https://7508dbf9-7f34-4968-93fb-6d26f76a00b6.mock.pstmn.io/api/add', {
+            fetch('http://localhost:3000/api/add', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

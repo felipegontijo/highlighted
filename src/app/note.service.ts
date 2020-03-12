@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Note } from './note';
-import { NOTES } from './mock-notes';
 import { Observable, of } from 'rxjs';
 
 @Injectable({

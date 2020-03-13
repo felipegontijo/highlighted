@@ -3,6 +3,8 @@ const express = require('express');
 // Start up an instance of app
 const app = express();
 
+const Note = require('./model/note');
+
 /* Dependencies */
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -31,8 +33,6 @@ function listening() {
 
 /* Routes */
 
-let notes = [];
-
 app.get('/api/notes', sendData);
 
 function sendData(request, response) {
@@ -42,7 +42,7 @@ function sendData(request, response) {
 app.post('/api/add', addData);
 
 function addData(request, response) {
-    notes.push({
+    const note = new Note({
         url: request.body.url,
         title: request.body.title,
         content: request.body.content

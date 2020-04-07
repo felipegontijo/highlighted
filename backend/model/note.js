@@ -1,9 +1,9 @@
-import mongoose, { Schema } from 'mongoose';
+const mongoose = require('mongoose');
 
-const noteSchema = new Schema({
-    url: String,
-    title: String,
-    content: String
+const noteSchema =  mongoose.Schema({
+    url: { type: String, required: true },
+    title: { type: String, required: true },
+    content: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Note', noteSchema);

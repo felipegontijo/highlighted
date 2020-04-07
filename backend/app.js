@@ -8,13 +8,19 @@ const Note = require('./model/note');
 /* Connect Mongoose */
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://admin:wdbXbQZgG1J9wVax@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority')
+const uri = 'mongodb+srv://admin:wdbXbQZgG1J9wVax@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority';
+const options = [
+    { useNewUrlParser: true },
+];
+mongoose.connect(uri, ...options)
     .then(() => {
         console.log('Connection to database successful');
     })
     .catch(() => {
         console.log('Connection to database failed');
     })
+;
+mongoose.set('useUnifiedTopology', true);
 
 /* Dependencies */
 const bodyParser = require('body-parser');
@@ -58,5 +64,6 @@ function addData(request, response) {
         title: request.body.title,
         content: request.body.content
     });
+    note.save(); // mongoose function -- automatically creates collection and saves new note to database 'test'
     response.status(201);
 }

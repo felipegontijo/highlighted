@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:server": "nodemon server.js"
+    "start:server": "nodemon server.js",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,7 @@
     "@angular/compiler": "~9.1.0",
     "@angular/core": "~9.1.0",
     "@angular/forms": "~9.1.0",
+    "@angular/localize": "^9.1.0",
     "@angular/material": "^9.2.0",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",

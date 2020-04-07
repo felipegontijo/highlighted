@@ -5,6 +5,17 @@ const app = express();
 
 const Note = require('./model/note');
 
+/* Connect Mongoose */
+
+const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://admin:wdbXbQZgG1J9wVax@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority')
+    .then(() => {
+        console.log('Connection to database successful');
+    })
+    .catch(() => {
+        console.log('Connection to database failed');
+    })
+
 /* Dependencies */
 const bodyParser = require('body-parser');
 const cors = require('cors');

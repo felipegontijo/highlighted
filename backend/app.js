@@ -8,7 +8,7 @@ const Note = require('./model/note');
 /* Connect Mongoose */
 
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://admin:wdbXbQZgG1J9wVax@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://admin:XzR6L3DjxiDNzkQ3@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority';
 const options = [
     { useNewUrlParser: true },
 ];
@@ -16,8 +16,8 @@ mongoose.connect(uri, ...options)
     .then(() => {
         console.log('Connection to database successful');
     })
-    .catch(() => {
-        console.log('Connection to database failed');
+    .catch((error) => {
+        console.log('Connection to database failed', error);
     })
 ;
 mongoose.set('useUnifiedTopology', true);
@@ -50,12 +50,6 @@ function listening() {
 
 /* Routes */
 
-app.get('/api/notes', sendData);
-
-function sendData(request, response) {
-    response.send(notes);
-}
-
 app.post('/api/add', addData);
 
 function addData(request, response) {
@@ -66,4 +60,17 @@ function addData(request, response) {
     });
     note.save(); // mongoose function -- automatically creates collection and saves new note to database 'test'
     response.status(201);
+}
+
+app.get('/api/notes', sendData);
+
+function sendData(request, response) {
+    Note.find()
+        .then((docs) => {
+            response.send(docs);
+        })
+        .catch((err) => {
+            console.log(err, 'error');
+        })
+    ;
 }

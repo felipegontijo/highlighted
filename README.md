@@ -2,7 +2,7 @@
 
 Browser Extension and Web Application that allows users to store information they find interesting or useful on the web into their accounts.
 
-More information to come. For the design specification of this project, go to this [Wiki](https://github.com/felipegontijo/highlighted/wiki/Software-Design-Specification)
+For more information on this project, please go to its [Wiki](https://github.com/felipegontijo/highlighted/wiki/Software-Design-Specification)
 
 ## Tech Stack
 

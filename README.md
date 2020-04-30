@@ -10,7 +10,7 @@ The process is seamless and saves time and effort in finding and saving importan
 
 --> For more in-depth information on this project, please refer to the [Design Specification](https://github.com/felipegontijo/highlighted/wiki/Software-Design-Specification)
 
-## In Progress!
+## 🔜 In Progress!
 
 Important: this is **currently a work in progress** and has is set to launch on May. Please check back soon to see if it's already out :)
 

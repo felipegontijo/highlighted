@@ -5,8 +5,11 @@
             <mat-expansion-panel-header>
                 {{ note.title }}
             </mat-expansion-panel-header>
-            <a href="{{ note.url }}" class="note__url">{{ note.url }}</a>
+            <a href="{{ note.url }}" class="note__url">Visit website</a>
             <p class="note__content">{{ note.content }}</p>
+            <button mat-mini-fab color="warn" aria-label="Icon button with a delete icon" (click)="deleteNote(note._id)">
+                <mat-icon>delete</mat-icon>
+            </button>
         </mat-expansion-panel>
     </mat-accordion>
 </div>

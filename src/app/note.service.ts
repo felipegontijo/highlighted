@@ -11,11 +11,20 @@ export class NoteService {
 
   private notesUrl = 'http://localhost:3000/api/notes';
 
+  constructor(private http: HttpClient) { }
+
   getNotes(): Observable<Note[]> {
     return this.http.get<Note[]>(this.notesUrl)
       .pipe(
         catchError(this.handleError<Note[]>('getNotes', []))
       )
+  }
+
+  deleteNote(id: any): Observable<{}> {
+    const deleteUrl = `${this.notesUrl}/${id}`;
+    return this.http.delete(deleteUrl).pipe(
+      catchError(this.handleError('deleteNote'))
+    );
   }
 
   /**
@@ -38,7 +47,5 @@ export class NoteService {
       return of(result as T);
     };
   }
-
-  constructor(private http: HttpClient) { }
 }
 

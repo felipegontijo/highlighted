@@ -8,6 +8,7 @@ const Note = require('./model/note');
 /* Connect Mongoose */
 
 const mongoose = require('mongoose');
+const ObjectId = require('mongoose').Types.ObjectId;
 const uri = 'mongodb+srv://admin:XzR6L3DjxiDNzkQ3@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority';
 const options = [
     { useNewUrlParser: true },
@@ -28,7 +29,7 @@ const cors = require('cors');
 
 /* Middleware */
 
-// use body-parser as middle-ware.
+// use body-parser as middle-ware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -50,18 +51,6 @@ function listening() {
 
 /* Routes */
 
-app.post('/api/add', addData);
-
-function addData(request, response) {
-    const note = new Note({
-        url: request.body.url,
-        title: request.body.title,
-        content: request.body.content
-    });
-    note.save(); // mongoose function -- automatically creates collection and saves new note to database 'test'
-    response.status(201);
-}
-
 app.get('/api/notes', sendData);
 
 function sendData(request, response) {
@@ -73,4 +62,28 @@ function sendData(request, response) {
             console.log(err, 'error');
         })
     ;
+}
+
+app.post('/api/add', addData);
+
+function addData(request, response) {
+    const note = new Note({
+        url: request.body.url,
+        title: request.body.title,
+        content: request.body.content
+    });
+    note.save().then(createdNote => {
+        // note.id = `${createdNote._id}`;
+        response.status(201);
+        console.log(note);
+    })
+}
+
+app.delete('/api/notes/:id', deleteData);
+
+function deleteData(request, response) {
+    Note.deleteOne({ "_id": ObjectId(request.params._id) })
+        .then(result => {
+            console.log(result);
+        });
 }

@@ -19,6 +19,11 @@ export class NotesComponent implements OnInit {
       .subscribe(notes => this.notes = notes);
   }
 
+  deleteNote(id: any): void {
+    this.noteService.deleteNote(id)
+      .subscribe();
+  }
+
   ngOnInit() {
     this.getNotes();
   }

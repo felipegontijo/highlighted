@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 const ObjectId = require('mongoose').Types.ObjectId;
 const uri = 'mongodb+srv://admin:XzR6L3DjxiDNzkQ3@highlighted-cluster-ylsrs.mongodb.net/test?retryWrites=true&w=majority';
 const options = [
-    { useNewUrlParser: true },
+    { useNewUrlParser: true }
 ];
 mongoose.connect(uri, ...options)
     .then(() => {
@@ -79,10 +79,10 @@ function addData(request, response) {
     })
 }
 
-app.delete('/api/notes/:id', deleteData);
+app.delete('/api/notes/:_id', deleteData);
 
 function deleteData(request, response) {
-    Note.deleteOne({ "_id": ObjectId(request.params._id) })
+    Note.deleteOne({ _id: ObjectId(request.params._id) })
         .then(result => {
             console.log(result);
         });

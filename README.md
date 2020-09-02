@@ -12,8 +12,6 @@ The process is seamless and saves time and effort in finding and saving importan
 
 ## 🔜 In Progress!
 
-Important: this is **currently a work in progress** and has is set to launch on May. Please check back soon to see if it's already out :)
-
 ## 💯 Features
 
 Upon the selection of the desired text, the application saves:
@@ -37,6 +35,6 @@ This project is built with the MEAN Stack: MongoDB, Express, Angular, and Node.j
 
 ## 🆘 Contributing
 
-Contributions are welcomed and encouraged! More detailed info on how to do so will be out soon.
+Contributions are welcomed and encouraged!
 
-But feel free to star ⭐️ the repo and reach out!
+Feel free to star ⭐️ the repo and reach out!

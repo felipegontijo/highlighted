@@ -10,8 +10,6 @@ The process is seamless and saves time and effort in finding and saving importan
 
 --> For more in-depth information on this project, please refer to the [Design Specification](https://github.com/felipegontijo/highlighted/wiki/Software-Design-Specification)
 
-## 🔜 In Progress!
-
 ## 💯 Features
 
 Upon the selection of the desired text, the application saves:
@@ -24,10 +22,14 @@ Upon the selection of the desired text, the application saves:
 
 The application is fairly easy to get up and running 🙌
 
- - Create an account on the web app ✔
- - Download the extension from the Chrome store and login (support for other browsers will be added in the future) ✔
+ - Download the source code ✔
+ - Install all packages dependencies including Angular, Node, Express, MongoDB and make sure you have an account with Mongo so you can have your own set of keys and your instance of the app. Also upload the browser extension into your Chromium-based browser so you can use it ✔
+ - Run the application and navigate to the usual localhost to see it live 👌
  - Browse the web as usual, highlight any piece of text you find worthy of saving, and keep browsing ✔️
- - Access your account on the web app to see your saved notes 👌
+
+## 🔜 In Progress!
+
+In the future, the idea is to have a more streamlined experience, adding features like account creation and storage of the notes. For now, however, you can still use the application by downloading it and running it yourself. Hey there is even a good thing to that: you own your data :)
  
 ## ⚙️ Tech Stack
 
@@ -35,6 +37,6 @@ This project is built with the MEAN Stack: MongoDB, Express, Angular, and Node.j
 
 ## 🆘 Contributing
 
-Contributions are welcomed and encouraged!
+Contributions are welcomed and encouraged. A todo list will be added soon.
 
 Feel free to star ⭐️ the repo and reach out!

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HeroComponent } from './hero/hero.component'
+import { HeroComponent } from './hero/hero.component';
 import { TeaserComponent } from './teaser/teaser.component';
 import { NotesComponent } from './notes/notes.component';
 import { AppRoutingModule } from './app-routing.module';

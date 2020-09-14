@@ -4,7 +4,7 @@ import { NotesComponent } from './notes/notes.component';
 
 const routes: Routes = [
   { path: 'notes', component: NotesComponent}
-]
+];
 
 @NgModule({
   declarations: [],

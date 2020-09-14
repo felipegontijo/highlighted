@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-header',
@@ -7,8 +7,8 @@ import { Component } from '@angular/core'
 })
 
 export class HeaderComponent {
-    headerTitle: string = 'highlightED';
-    firstLink: string = 'About';
-    secondLink: string = 'Download';
-    thirdLink: string = 'Login | Signup';
+    headerTitle = 'highlightED';
+    firstLink = 'About';
+    secondLink = 'Download';
+    thirdLink = 'Login | Signup';
 }

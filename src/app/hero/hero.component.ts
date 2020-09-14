@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-hero',
@@ -7,6 +7,6 @@ import { Component } from '@angular/core'
 })
 
 export class HeroComponent {
-    heroTitle: string = 'The Knowledge Bank';
-    heroDescription: string = 'Save content from the web with one click. Then keep browsing and easily access it when you need it.';
+    heroTitle = 'The Knowledge Bank';
+    heroDescription = 'Save content from the web with one click. Then keep browsing and easily access it when you need it.';
 }
